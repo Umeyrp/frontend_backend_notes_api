@@ -1,3 +1,10 @@
 from django.db import models
 
 # Create your models here.
+
+
+class Notes(models.Model):
+    title = models.CharField()
+    content = models.CharField()
+    marked = models.BooleanField()
+    trash = models.BooleanField()
